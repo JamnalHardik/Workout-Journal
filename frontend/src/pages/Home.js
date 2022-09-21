@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        `https://workoutjournal.onrender.com/api/workouts`
+        `https://workout-journal.onrender.com//api/workouts`
       );
       const json = await response.json();
 
