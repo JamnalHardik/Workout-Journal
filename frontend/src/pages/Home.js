@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
-
+import { API } from "../backend";
 // components
 import WorkoutDetails from "../components/WorkoutDetails";
 import WorkoutForm from "../components/WorkoutForm";
@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        "https://workout-journal.onrender.com/api/workouts"
+        `https://workout-journal.onrender.com/api/workouts`
       );
       const json = await response.json();
 
